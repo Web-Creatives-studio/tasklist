@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+body{
+    width: 35vw;
+    border: 1px solid #711cd7;
+    box-shadow: 1px 1px 2px 2px #00000097;
+    height: fit-content;
+}
+header{
+    background-color: #711cd7;
+    width: 35vw;
+    margin: 0 auto;
+}
+.heads{
+    display: grid;
+    grid-template-columns: 2fr 1.3fr;
+    height: 10vh;
+    margin: 0 auto;
+}
+.head{
+    margin: auto 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.726);
+}
+
+
+/*controls*/
+.control-container{
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    width: 32vw;
+    box-shadow: 1px 1px 2px 2px #00000097;
+    border-radius: 10px;
+}
+.control{
+    text-align: center;
+}
+.control ul li{
+    display: inline-block;
+    margin-inline: 1.5rem;
+}
+.control ul li a{
+    text-decoration: none;
+}
+.control ul li a:hover, .active{
+    border-bottom: 2px solid #711cd7;
+}
+
+::-webkit-scrollbar{ 
+    width: 3px; 
+    cursor: pointer;
+} 
+::-webkit-scrollbar-track{ 
+    background-color: white; 
+    border-radius: 10px; 
+} 
+::-webkit-scrollbar-thumb{ 
+    background-color:#711cd7; 
+    border-radius: 10px; 
+}
+
+/*New Test*/
+.cont{
+    height: 74vh;
+    margin-top: 10px;
+    overflow-y: scroll;
+    padding-bottom: 12px;
+}
+.task-container{
+    cursor:pointer;
+    background-color: #711cd7;
+    padding: 22px 10px 22px 20px;
+    width: 32vw;
+    border-radius: 10px;
+    margin-top: 12px;
+    text-align: left;
+}
+.result{
+    height: fit-content;
+}
+.tasks{
+    display: grid;
+    grid-template-columns: 0.2fr 2fr 1.3fr 0.2fr;
+    height: fit-content;
+    margin: 0 auto;
+}
+.task{
+    margin: auto 0;
+}
+.task:first-child{
+    text-align: left;
+}
+.task:last-child{
+    text-align: right;
+    display: grid;
+    row-gap: 0.8rem;
+}
+.task:nth-child(3){
+    text-align: right;
+    display: grid;
+    row-gap: 0.5rem;
+}
+.task button{
+    background-color:transparent;
+    color:white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.completed{
+    background-color:#078263;
+}
+.adds{
+    height: fit-content;
+    background-color: #711cd7;
+    margin-top: 5px;
+}
+.add{
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+    width: 10vw;
+    margin-top: 6px;
+    background-color: #711cd7;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.add1{
+    margin: auto 0;
+}
+.add1 button{
+    background-color: #711cd7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+/*queuing*/
+.enters{
+    width:25vw ;
+    display: grid; 
+    grid-template-columns: 2fr; 
+    gap: 2rem;
+    margin: 0 auto; 
+    margin-top: 5px; 
+    background-color: white; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    border-radius: 20px;
+}
+.enter{ 
+    display: grid; 
+    grid-template-columns: 0.3fr 2fr;
+    margin: auto 0;
+    width: 15vw;
+    gap: 1rem;
+} 
+.enter input{ 
+    width: 10vw; 
+    outline: none; 
+}
+.enter:first-child input{
+    width: 15vw;
+} 
+.times{ 
+    display: grid; 
+    grid-template-columns: 2fr; 
+    gap: 1rem; 
+} 
+.time{ 
+    display: flex; 
+    gap: 0.5rem; 
+}
+.taskfill{
+    display: grid;
+    grid-template-columns: 0.1fr 2fr;
+}
+.filltask{
+    height: 74.3vh;
+}
+@media screen and (max-width:480px) {
+    body{
+        width: 95vw;
+    }
+    header{
+        width: 95vw;
+    }
+    .control-container{
+        width: 92vw;
+    }
+    .task-container{
+        width: 92vw;
+    }
+    .control ul li{
+        margin-inline: 0.5rem;
+    }
+    .add{
+        width: 35vw;
+    }
+    .enters{
+        width:90vw;
+    }
+    .enter{
+        width: 70vw;
+    }
+    .enter input{
+        width: 30vw;
+    }
+    .enter:first-child input{
+        width: 40vw;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css.css">
+</head>
+<body>
+    <header>
+        <div class="heads">
+            <div class="head">
+                <h1>Task List</h1>
+            </div>
+            <div class="head">
+                <p id="day"></p>
+                <p id="time"></p>
+            </div>
+        </div>
+    </header>
+    <!--Home-->
+    <section class="control-container">
+        <div class="control">
+            <ul>
+                <li><a href="./index.html">All Task</a></li>
+                <li><a href="./active.html" class="active">Active</a></li>
+                <li><a href="./queuing.html">Queuing</a></li>
+                <li><a href="./closed.html">Closed</a></li>
+            </ul>
+        </div>
+    </section>
+    <!--Display List-->
+    <section class="cont">
+        <div class="result" id="result"></div>
+    </section>
+    <!--Add list-->
+    <section class="adds">
+        <div class="add">
+            <div class="add1"><p>Add New Task</p></div>
+            <div class="add1"><button><i class="fa-solid fa-plus"></i></button></div>
+        </div>
+    </section>
+    <script src="./active.js"></script>
+</body>
+</html>

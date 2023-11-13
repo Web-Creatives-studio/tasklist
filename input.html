@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css.css">
+</head>
+<body>
+    <header>
+        <div class="heads">
+            <div class="head">
+                <h1>Task List</h1>
+            </div>
+            <div class="head">
+                <p id="day"></p>
+                <p id="time"></p>
+            </div>
+        </div>
+    </header>
+    <!--Home-->
+    <section class="control-container">
+        <div class="taskfill">
+            <button onclick="window.location='index.html'">Back</button>
+            <h3>Input Task</h3>
+        </div>
+    </section>
+    <!--Input Task-->
+    <section class="filltask">
+        <div class="enters"> 
+            <div class="enter"> 
+                <p>Title:</p> 
+                <input type="text" id="title"> 
+            </div> 
+            <div class="enter"> 
+                <p>Date:</p> 
+                <input type="date" name="" id="date"> 
+            </div> 
+            <div class="enter"> 
+                <p>Time:</p> 
+                <div class="times"> 
+                    <div class="time"> 
+                        <p>Start:</p> 
+                        <input type="time" name="" id="startTime"> 
+                    </div> 
+                    <div class="time"> 
+                        <p>Stop:</p> 
+                        <input type="time" name="" id="stopTime"> 
+                    </div> 
+                </div> 
+            </div> 
+    </section>
+    <!--Add list-->
+    <section class="adds">
+        <div class="add" id="save">
+            <div class="add1"><p>Save New Task</p></div>
+            <div class="add1"><button><i class="fa-solid fa-square-check"></i></button></div>
+        </div>
+    </section>
+    <script src="./input.js"></script>
+</body>
+</html>
